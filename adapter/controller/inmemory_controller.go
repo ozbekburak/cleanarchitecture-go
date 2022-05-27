@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ozbekburak/go-clean-api/adapter/gateway"
-	"github.com/ozbekburak/go-clean-api/domain"
-	"github.com/ozbekburak/go-clean-api/pkg/db"
-	"github.com/ozbekburak/go-clean-api/pkg/logger"
-	"github.com/ozbekburak/go-clean-api/usecase/interactor"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/adapter/gateway"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/logger"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/usecase/interactor"
 )
 
 type InMemoryController struct {

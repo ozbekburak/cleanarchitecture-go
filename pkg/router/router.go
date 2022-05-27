@@ -3,8 +3,8 @@ package router
 import (
 	"net/http"
 
-	"github.com/ozbekburak/go-clean-api/adapter/controller"
-	"github.com/ozbekburak/go-clean-api/pkg/db"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/adapter/controller"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
 	"go.mongodb.org/mongo-driver/mongo"
 )
 

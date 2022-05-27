@@ -1,4 +1,4 @@
-module github.com/ozbekburak/go-clean-api
+module github.com/ozbekburak/cleanarch-mongo-inmem
 
 go 1.18
 

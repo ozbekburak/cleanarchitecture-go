@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ozbekburak/go-clean-api/domain"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
 )
 
 // ErrorResponse represents error response data object

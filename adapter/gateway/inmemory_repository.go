@@ -1,8 +1,8 @@
 package gateway
 
 import (
-	"github.com/ozbekburak/go-clean-api/domain"
-	"github.com/ozbekburak/go-clean-api/pkg/db"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
 )
 
 type InMemoryRepository struct {

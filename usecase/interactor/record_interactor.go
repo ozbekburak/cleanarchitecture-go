@@ -1,8 +1,8 @@
 package interactor
 
 import (
-	"github.com/ozbekburak/go-clean-api/domain"
-	"github.com/ozbekburak/go-clean-api/usecase/repository"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/usecase/repository"
 )
 
 // RecordInteractor is the struct that implements the RecordRepository interface

@@ -4,10 +4,10 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/ozbekburak/go-clean-api/pkg/config"
-	"github.com/ozbekburak/go-clean-api/pkg/db"
-	"github.com/ozbekburak/go-clean-api/pkg/logger"
-	"github.com/ozbekburak/go-clean-api/pkg/router"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/config"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/logger"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/router"
 )
 
 func main() {

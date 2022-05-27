@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/ozbekburak/go-clean-api/domain"
+import "github.com/ozbekburak/cleanarch-mongo-inmem/domain"
 
 // RecordRepository interface defines methods for filter operations on Record
 type RecordRepository interface {

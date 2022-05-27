@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ozbekburak/go-clean-api/domain"
+	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )
