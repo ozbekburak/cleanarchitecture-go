@@ -1,4 +1,4 @@
-# Clean Architecture - MongoDB & In-Memory
+# Go - Clean Architecture Template 
 
 Ready-to-use clean architecture template. 
 
