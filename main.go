@@ -31,9 +31,7 @@ func main() {
 		}
 	}()
 
-	inMemoryDB := db.NewInMemoryDB()
-
-	router := router.Initialize(conn, inMemoryDB)
+	router := router.Initialize(conn)
 
 	if err := http.ListenAndServe(":8080", router); err != nil {
 		logger.Errorf("Error when starting server %s", err)
