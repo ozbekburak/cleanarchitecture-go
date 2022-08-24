@@ -1,19 +1,19 @@
 package router
 
 import (
+	"database/sql"
 	"net/http"
 
 	"github.com/ozbekburak/cleanarch-mongo-inmem/adapter/controller"
-	"go.mongodb.org/mongo-driver/mongo"
 )
 
 // Initialize function initializes the router
-func Initialize(conn *mongo.Client) *http.ServeMux {
-	recordController := controller.NewRecordController(conn)
+func Initialize(conn *sql.DB) *http.ServeMux {
+	userController := controller.NewUserController(conn)
 
 	router := http.NewServeMux()
 
-	router.Handle("/records", recordController.Filter())
+	router.Handle("/user", userController.Store())
 
 	return router
 }
