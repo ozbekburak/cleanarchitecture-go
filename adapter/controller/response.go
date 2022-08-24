@@ -3,8 +3,6 @@ package controller
 import (
 	"encoding/json"
 	"net/http"
-
-	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
 )
 
 // ErrorResponse represents error response data object
@@ -15,15 +13,15 @@ type ErrorResponse struct {
 
 // ErrorResponse represents success response data object
 type SuccessResponse struct {
-	Code    int             `json:"code"`
-	Msg     string          `json:"msg"`
-	Records []domain.Record `json:"records"`
+	Code int    `json:"code"`
+	Msg  string `json:"msg"`
 }
 
 // RespondWithError calls RespondWithJSON and writes error response data object to response writer
 func RespondWithError(w http.ResponseWriter, code int, message string) {
 	RespondWithJSON(w, code, ErrorResponse{
-		Code: 1, // We hardcoded this error value
+		// We hardcoded this error value
+		Code: 1,
 		Msg:  message,
 	})
 }
