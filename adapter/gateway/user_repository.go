@@ -3,7 +3,7 @@ package gateway
 import (
 	"database/sql"
 
-	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
+	"github.com/ozbekburak/cleanarchitecture-go/domain"
 )
 
 type UserRepository struct {

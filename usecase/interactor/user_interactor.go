@@ -1,8 +1,8 @@
 package interactor
 
 import (
-	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/usecase/repository"
+	"github.com/ozbekburak/cleanarchitecture-go/domain"
+	"github.com/ozbekburak/cleanarchitecture-go/usecase/repository"
 )
 
 type UserInteractor struct {

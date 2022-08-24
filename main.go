@@ -1,10 +1,10 @@
 package main
 
 import (
-	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/config"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/logger"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/router"
+	"github.com/ozbekburak/cleanarchitecture-go/pkg/config"
+	"github.com/ozbekburak/cleanarchitecture-go/pkg/db"
+	"github.com/ozbekburak/cleanarchitecture-go/pkg/logger"
+	"github.com/ozbekburak/cleanarchitecture-go/pkg/router"
 )
 
 func main() {

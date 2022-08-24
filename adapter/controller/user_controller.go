@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ozbekburak/cleanarch-mongo-inmem/adapter/gateway"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/domain"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/logger"
-	"github.com/ozbekburak/cleanarch-mongo-inmem/usecase/interactor"
+	"github.com/ozbekburak/cleanarchitecture-go/adapter/gateway"
+	"github.com/ozbekburak/cleanarchitecture-go/domain"
+	"github.com/ozbekburak/cleanarchitecture-go/pkg/logger"
+	"github.com/ozbekburak/cleanarchitecture-go/usecase/interactor"
 )
 
 type UserController struct {

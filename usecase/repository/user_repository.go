@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/ozbekburak/cleanarch-mongo-inmem/domain"
+import "github.com/ozbekburak/cleanarchitecture-go/domain"
 
 // UserRepository interface defines methods for CRUD operations on User
 type UserRepository interface {

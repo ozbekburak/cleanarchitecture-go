@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"net/http"
 
-	"github.com/ozbekburak/cleanarch-mongo-inmem/adapter/controller"
+	"github.com/ozbekburak/cleanarchitecture-go/adapter/controller"
 )
 
 // Initialize function initializes the router
