@@ -1,9 +1,6 @@
 package main
 
 import (
-	"context"
-	"net/http"
-
 	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/config"
 	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/db"
 	"github.com/ozbekburak/cleanarch-mongo-inmem/pkg/logger"
@@ -13,27 +10,19 @@ import (
 func main() {
 	err := config.Load()
 	if err != nil {
-		logger.Errorf("Loading config error: %s", err)
+		logger.Errorf("Failed to load config error: %v", err)
 		return
 	}
 
-	mongo := db.NewMongoDB()
+	db := db.NewPostgres()
 
-	conn, err := mongo.Conn()
+	conn, err := db.Conn()
 	if err != nil {
-		logger.Errorf("Connecting to db error: %s", err)
+		logger.Errorf("Failed to connect DB error: %v", err)
 		return
 	}
-	defer func() {
-		if err = conn.Disconnect(context.TODO()); err != nil {
-			logger.Errorf("Disconnecting from db error: %s", err)
-			return
-		}
-	}()
 
-	router := router.Initialize(conn)
+	defer conn.Close()
 
-	if err := http.ListenAndServe(":8080", router); err != nil {
-		logger.Errorf("Error when starting server %s", err)
-	}
+	router.Initialize(conn)
 }
